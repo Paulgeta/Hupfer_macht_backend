@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hupferstinkt</string>
+    <string name="textviewname">Maximilian Hirner</string>
+    <string name="wortschatz1">String val noch ändern</string>
+    <string name="wortschatz2">String val noch ändern</string>
+    <string name="wortschatz3">String val noch ändern</string>
+    <string name="wortschatz4">String val noch ändern</string>
+    <string name="wortschatz5">String val noch ändern</string>
+</resources>

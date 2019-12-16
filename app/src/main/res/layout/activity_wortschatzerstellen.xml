@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wortschatzerstellen">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Wortschatz erstellen"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#FFFFFF" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="schuelerhinzufuegen"
+        android:src="@drawable/baseline_add_black_18dp"
+        android:visibility="visible"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Titel:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Titel eingeben..."
+        android:inputType="textPersonName"
+        android:textColorHighlight="#3F51B5"
+        android:textColorLink="#2196F3"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#2196F3"
+        android:text="Speichern"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 1"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 2"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 3"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 4"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 5"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 6"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 7"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 8"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 9"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 10"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 11"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 12"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 13"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="schuelerhinzufuegen"
+                android:text="Schüler 14"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 15"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Schüler 16"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
